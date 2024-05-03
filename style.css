@@ -1,10 +1,10 @@
 /* ---- Styles for all elements --------------------*/
-* {
-    border: 1px dashed red;
-}
-
 button{
     background-color: #3882F6;
+    color: #E5E7EB;
+    border-radius: 5px;
+    padding: 8px 16px;
+    font-weight: bold;
 }
 
 body {
@@ -135,4 +135,18 @@ a {
 /* ---- Styles for footer --------------------------*/
 .footer-call2act {
     background-color: #3882F6;
+    padding: 24px;
+    border-radius: 10px;
+}
+
+/* flexbox for footer */
+.footer-call2act {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.footer-call2act button {
+    border-color: #E5E7EB;
+    border-style: solid;
 }
