@@ -1,9 +1,14 @@
-/* Styles for all elements */
+/* ---- Styles for all elements --------------------*/
+* {
+    border: 1px dashed red;
+}
+
 button{
     background-color: #3882F6;
 }
 
 body {
+    margin: 0;
     font-family: Arial, Helvetica, sans-serif;
 }
 
@@ -12,7 +17,11 @@ a {
     font-size: 18px;
 }
 
-/* Styles for header and intro*/
+.header, .intro, .content, .quote, .footer {
+    padding: 48px;
+}
+
+/* ---- Styles for header and intro ---------------*/
 .header, .intro {
     background-color: #1F2937;
 }
@@ -28,23 +37,56 @@ a {
     font-size: 18px;
 }
 
-.header-logo {
+.header-logo, .call2act-header {
     color: #F9FAF8;
     font-size: 24px;
+    font-weight: bold;
 }
 
-.intro-image {
-    background-color: lightgray;
+/* header flexbox */
+.header {
+    display: flex;
+    justify-content: space-between;
 }
 
-/* Styles for content */
+.header-links {
+    width: 450px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.placeholder-text {
+    background-color: gray;
+    color: #F9FAF8;
+    min-height: 250px;
+    min-width: 500px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* intro flexbox */
+.intro {
+    display: flex;
+    justify-content: space-between;
+}
+
+.intro-para, .intro-image {
+    padding: 48px 0px;
+}
+
+.intro-para p {
+    margin: 0;
+}
+
+/* ---- Styles for content -------------------------*/
 .content-header {
     color: #1F2937;
     font-size: 36px;
     font-weight: bolder;
 }
 
-/* Styles for quote */
+/* ---- Styles for quote ---------------------------*/
 .quote {
     background-color: #E5E7EB;
 }
@@ -59,7 +101,7 @@ a {
     font-weight: bold;
 }
 
-/* Styles for footer */
+/* ---- Styles for footer --------------------------*/
 .footer-call2act {
     background-color: #3882F6;
 }
