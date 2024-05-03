@@ -126,6 +126,12 @@ a {
     font-weight: bold;
 }
 
+/* flexbox for quote */
+.credit {
+    display: flex;
+    justify-content: flex-end;
+}
+
 /* ---- Styles for footer --------------------------*/
 .footer-call2act {
     background-color: #3882F6;
